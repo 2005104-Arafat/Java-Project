@@ -1,0 +1,95 @@
+
+.mainView{
+     -fx-background-image:url("company.jpg");
+     -fx-background-size:cover;
+}
+.searchOption{
+    -fx-background-image:url("logInMenu.jpg");
+         -fx-background-size:cover;
+}
+.maxRevenue{
+    -fx-background-image:url("all.jpg");
+         -fx-background-size:cover;
+}
+.recentMovie{
+    -fx-background-image:url("all.jpg");
+     -fx-background-size:cover;
+}
+.allMovies{
+-fx-background-image:url("all.jpg");
+     -fx-background-size:cover;
+}
+.totalProfit{
+-fx-background-image:url("company.jpg");
+     -fx-background-size:cover;
+}
+.transferMovie{
+-fx-background-image:url("transfer.jpg");
+     -fx-background-size:cover;
+}
+.addMovie{
+    -fx-background-image:url("allMovie.jpg");
+         -fx-background-size:cover;
+}
+.button{
+    -fx-color: blue;
+    -fx-text-fill:white;
+    -fx-background-radius:20;
+}
+.button:hover{
+    -fx-background-color:orange;
+}
+.Text-field{
+        -fx-font-size: 14;
+        -fx-border-color: black;
+        -fx-border-width:2;
+        -fx-background-radius:10;
+        -fx-border-radius:10;
+        -fx-background-color: white;
+        -fx-text-fill: green;
+        -fx-font-size:14px;
+        -fx-font-weight:bold;
+}
+.table-view
+{
+    -fx-background-color: transparent;
+}
+.table-view:focused
+{
+    -fx-background-color: transparent;
+}
+.table-row-cell:even
+{
+    -fx-background-color: white;
+    -fx-text-fill: green;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+}
+.table-row-cell:odd
+{
+    -fx-background-color: #71aab0;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+}
+.table-row-cell:even
+{
+    -fx-background-color: white;
+    -fx-text-fill: green ;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+}
+.table-row-cell:odd
+{
+    -fx-background-color: #71aab0white;
+    -fx-font-size:15px;
+    -fx-font-weight:bold;
+}
+.label{
+    -fx-background-color:black;
+}
+.label1{
+    -fx-background-color: transparent;
+}
+.choicebox{
+  -fx-background-color:transparent;
+}

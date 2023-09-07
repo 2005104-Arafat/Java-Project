@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="transferMovie" prefHeight="720.0" prefWidth="1080.0" styleClass="transferMovie" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TransferMoviePageController">
+   <stylesheets>
+      <URL value="@/Styles/allScene.css" />
+   </stylesheets>
+   <children>
+      <Label fx:id="label1" layoutX="268.0" layoutY="46.0" prefHeight="147.0" prefWidth="543.0" stylesheets="@../../../Styles/allScene.css" text="MOVIE DATABASE" textFill="#d40d0d">
+         <font>
+            <Font name="Gabriola" size="88.0" />
+         </font>
+      </Label>
+      <Button layoutX="476.0" layoutY="514.0" mnemonicParsing="false" onAction="#clickOnTransfer" prefHeight="43.0" prefWidth="105.0" stylesheets="@../../../Styles/allScene.css" text="Transfer" textFill="#d71313">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Button>
+      <Button layoutX="985.0" layoutY="27.0" mnemonicParsing="false" onAction="#clickOnBack" prefHeight="40.0" prefWidth="75.0" stylesheets="@../../../Styles/allScene.css" text="Back" textFill="#df1313">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <ChoiceBox fx:id="movieName" layoutX="379.0" layoutY="350.0" prefHeight="35.0" prefWidth="300.0" stylesheets="@../../../Styles/allScene.css">
+         <styleClass>
+            <String fx:value="label1" />
+            <String fx:value="choicebox" />
+         </styleClass></ChoiceBox>
+      <ChoiceBox fx:id="companyName" layoutX="379.0" layoutY="446.0" prefHeight="35.0" prefWidth="300.0" styleClass="choicebox" stylesheets="@../../../Styles/allScene.css" />
+      <Label layoutX="379.0" layoutY="306.0" prefHeight="43.0" prefWidth="300.0" styleClass="label1" stylesheets="@../../../Styles/allScene.css" text="Select the Movie to Transfer" textFill="#c10ecf">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Label>
+      <Label layoutX="379.0" layoutY="402.0" prefHeight="43.0" prefWidth="300.0" styleClass="label1" stylesheets="@../../../Styles/allScene.css" text="Select the Production Company" textFill="#c913d6">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="297.0" layoutY="200.0" prefHeight="111.0" prefWidth="462.0" styleClass="label1" stylesheets="@../../../Styles/allScene.css" text="TRANSFER MOVIE" textAlignment="CENTER" textFill="#be22e5">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

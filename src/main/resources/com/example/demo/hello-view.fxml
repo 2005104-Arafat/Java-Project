@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="helloView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.logInController">
+   <stylesheets>
+      <URL value="@/Styles/allScene.css" />
+   </stylesheets>
+   <children>
+      <TextField fx:id="textField" layoutX="323.0" layoutY="300.0" prefHeight="43.0" prefWidth="435.0" promptText="Enter the name of the Production Company" stylesheets="@../../../Styles/allScene.css" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="322.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <styleClass>
+            <String fx:value="Text-field" />
+            <String fx:value="Text-field" />
+         </styleClass></TextField>
+      <Button layoutX="495.0" layoutY="360.0" mnemonicParsing="false" onAction="#logIn" prefHeight="43.0" prefWidth="89.0" stylesheets="@../../../Styles/allScene.css" text="Log in" textFill="#d10f0f">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <Label fx:id="label1" layoutX="268.0" layoutY="46.0" prefHeight="147.0" prefWidth="543.0" stylesheets="@../../../Styles/allScene.css" text="MOVIE DATABASE" textFill="#d40d0d">
+         <font>
+            <Font name="Gabriola" size="88.0" />
+         </font>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="anchor-pane" />
+      <String fx:value="mainView" />
+   </styleClass>
+</AnchorPane>

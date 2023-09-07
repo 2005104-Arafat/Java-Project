@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.TotalProfitPageController">
+    <stylesheets>
+        <URL value="@/Styles/allScene.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="totalProfit" layoutX="125.0" layoutY="192.0" prefHeight="400.0" prefWidth="800.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="141.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="280.0" text="Title" />
+                <TableColumn maxWidth="16.0" minWidth="0.0" prefWidth="0.0" text="Realese Year" />
+                <TableColumn fx:id="revenue" prefWidth="180.0" text="Revenue" />
+            <TableColumn fx:id="profit" prefWidth="180.0" text="Profit" />
+                <TableColumn fx:id="budget" prefWidth="180.0" text="Budget" />
+            </columns>
+        </TableView>
+      <Label layoutX="236.0" layoutY="606.0" prefHeight="95.0" prefWidth="584.0" text="   TOTAL PROFIT :" textFill="#bf2727">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lebel2" alignment="CENTER" layoutX="551.0" layoutY="606.0" prefHeight="95.0" prefWidth="257.0" textAlignment="CENTER" textFill="#d40e0e">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+        <Label fx:id="label1" layoutX="268.0" layoutY="46.0" prefHeight="134.0" prefWidth="543.0" stylesheets="@../../../Styles/allScene.css" text="MOVIE DATABASE" textFill="#d40d0d">
+            <font>
+                <Font name="Gabriola" size="88.0" />
+            </font>
+        </Label>
+      <Button layoutX="945.0" layoutY="41.0" mnemonicParsing="false" onAction="#clickOnBack" prefHeight="40.0" prefWidth="75.0" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

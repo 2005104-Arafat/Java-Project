@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="allMovie" prefHeight="720.0" prefWidth="1080.0" styleClass="allMovies" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AllMoviesPageController">
+    <stylesheets>
+        <URL value="@/Styles/allScene.css" />
+    </stylesheets>
+   <children>
+       <Label fx:id="label1" layoutX="268.0" layoutY="46.0" prefHeight="147.0" prefWidth="543.0" stylesheets="@../../../Styles/allScene.css" text="MOVIE DATABASE" textFill="#d40d0d">
+           <font>
+               <Font name="Gabriola" size="88.0" />
+           </font>
+       </Label>
+      <TableView fx:id="table" layoutY="220.0" prefHeight="500.0" prefWidth="1080.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="205.0" text="Title" />
+          <TableColumn maxWidth="16.0" minWidth="0.0" prefWidth="0.0" text="Realese Year" />
+            <TableColumn fx:id="releaseYear" prefWidth="125.0" text="Realese Year" />
+            <TableColumn fx:id="runningTime" prefWidth="125.0" text="Running Time" />
+            <TableColumn fx:id="genre1" minWidth="6.999969482421875" prefWidth="125.0" text="Genre" />
+            <TableColumn fx:id="genre2" prefWidth="125.0" text="Genre" />
+            <TableColumn fx:id="genre3" prefWidth="125.0" text="Genre" />
+            <TableColumn fx:id="budget" prefWidth="125.0" text="Budget" />
+            <TableColumn fx:id="revenue" prefWidth="125.0" text="Revenue" />
+        </columns>
+      </TableView>
+      <Button layoutX="57.0" layoutY="38.0" mnemonicParsing="false" onAction="#clickOnReload" prefHeight="43.0" prefWidth="98.0" stylesheets="@../../../Styles/allScene.css" text="Reload" textFill="#ef0d0d">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <Button layoutX="944.0" layoutY="38.0" mnemonicParsing="false" onAction="#clickOnBack" prefHeight="40.0" prefWidth="75.0" stylesheets="@../../../Styles/allScene.css" text="Back" textFill="#df0e0e">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

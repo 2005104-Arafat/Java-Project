@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="searchOption" prefHeight="720.0" prefWidth="1080.0" styleClass="searchOption" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SearchOptionPageController">
+   <stylesheets>
+      <URL value="@/Styles/allScene.css" />
+   </stylesheets>
+   <children>
+      <Label fx:id="label1" layoutX="268.0" layoutY="46.0" prefHeight="147.0" prefWidth="543.0" stylesheets="@../../../Styles/allScene.css" text="MOVIE DATABASE" textFill="#d40d0d">
+         <font>
+            <Font name="Gabriola" size="88.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="194.0" layoutY="78.0" prefHeight="480.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clickOnAllMovies" prefHeight="50.0" prefWidth="350.0" stylesheets="@../../../Styles/allScene.css" text="All Movies">
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clickOnRecentMovies" prefHeight="50.0" prefWidth="350.0" stylesheets="@../../../Styles/allScene.css" text="Search Recent Movies">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clickOnMaximumRevenue" prefHeight="50.0" prefWidth="350.0" stylesheets="@../../../Styles/allScene.css" text="Movies with Maximum Revenue">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="21.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clickOnTotalProfit" prefHeight="50.0" prefWidth="350.0" stylesheets="@../../../Styles/allScene.css" text="Total Profit">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clickOnAddMovie" prefHeight="50.0" prefWidth="350.0" stylesheets="@../../../Styles/allScene.css" text="Add Movie">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clickOnTransferMovie" prefHeight="50.0" prefWidth="350.0" stylesheets="@../../../Styles/allScene.css" text="Transfer Movie">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Bloom threshold="0.93" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor>
+      </VBox>
+      <Label layoutX="299.0" layoutY="185.0" prefHeight="97.0" prefWidth="483.0" styleClass="label1" stylesheets="@../../../Styles/allScene.css" text="     Search Options" textFill="#b10e0e" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="298.0">
+         <font>
+            <Font name="System Bold Italic" size="50.0" />
+         </font>
+      </Label>
+      <Button layoutX="935.0" layoutY="30.0" mnemonicParsing="false" onAction="#clickOnLogOut" prefHeight="43.0" prefWidth="119.0" stylesheets="@../../../Styles/allScene.css" text="LOG OUT" textFill="#c11313">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

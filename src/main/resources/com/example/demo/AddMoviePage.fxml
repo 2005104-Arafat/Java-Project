@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="addMovie" prefHeight="720.0" prefWidth="1080.0" styleClass="addMovie" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddMoviePageController">
+   <stylesheets>
+      <URL value="@/Styles/allScene.css" />
+   </stylesheets>
+   <children>
+      <Label fx:id="label1" layoutX="268.0" layoutY="46.0" prefHeight="147.0" prefWidth="543.0" stylesheets="@../../../Styles/allScene.css" text="MOVIE DATABASE" textFill="#d40d0d">
+         <font>
+            <Font name="Gabriola" size="88.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="186.0" prefHeight="95.0" prefWidth="180.0" styleClass="label1" stylesheets="@../../../Styles/allScene.css" text="ADD MOVIE" textFill="#0916cc" AnchorPane.leftAnchor="453.0">
+         <font>
+            <Font name="Artifakt Element Heavy Italic" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addTitle" alignment="CENTER" layoutX="43.0" layoutY="282.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter the Movie Title" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <TextField fx:id="addYear" alignment="CENTER" layoutX="443.0" layoutY="282.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter the Release Year" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <TextField fx:id="addTime" alignment="CENTER" layoutX="860.0" layoutY="282.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter Running Time" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <TextField fx:id="addGenre1" alignment="CENTER" layoutX="43.0" layoutY="381.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter Genre" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <TextField fx:id="addGenre2" alignment="CENTER" layoutX="443.0" layoutY="381.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter Genre" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <TextField fx:id="addGenre3" alignment="CENTER" layoutX="860.0" layoutY="381.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter Genre" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <TextField fx:id="addBudget" alignment="CENTER" layoutX="243.0" layoutY="465.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter Budget" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <TextField fx:id="addRevenue" alignment="CENTER" layoutX="643.0" layoutY="465.0" prefHeight="35.0" prefWidth="200.0" promptText="Enter Revenue" styleClass="Text-field" stylesheets="@../../../Styles/allScene.css" />
+      <Button layoutX="511.0" layoutY="560.0" mnemonicParsing="false" onAction="#clickOnAdd" prefHeight="40.0" prefWidth="75.0" stylesheets="@../../../Styles/allScene.css" text="ADD" textFill="#c71111">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+      <Label fx:id="Done" alignment="CENTER" layoutX="248.0" layoutY="608.0" prefHeight="66.0" prefWidth="596.0" text="SUCCESSFULLY ADDED" textAlignment="CENTER" textFill="#30c741" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font></Label>
+      <Label fx:id="Alert" alignment="CENTER" layoutX="251.0" layoutY="608.0" prefHeight="66.0" prefWidth="596.0" text="Label" textFill="#cc1f1f" visible="false">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font></Label>
+      <Button layoutX="960.0" layoutY="75.0" mnemonicParsing="false" onAction="#clickOnBack" prefHeight="40.0" prefWidth="75.0" stylesheets="@../../../Styles/allScene.css" text="Back" textFill="#230c9c">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
